@@ -1,0 +1,14 @@
+#icon {
+    width: 80px;
+    border-radius: 50px;
+  }
+nav{
+  background: -webkit-linear-gradient(#83bede, #54718f, #4e657c);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#83bede, #54718f, #4e657c);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradien(#83bede, #54718f, #4e657c);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#83bede, #54718f, #4e657c);
+}
+  
