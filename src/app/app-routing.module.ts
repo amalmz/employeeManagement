@@ -11,6 +11,7 @@ import {BoardHrComponent} from './board-hr/board-hr.component';
 import { ListEmployeesComponent } from './list-employees/list-employees.component';
 import { LeaveComponent } from './leave/leave.component';
 
+import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,10 +20,13 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'user', component: BoardUserComponent },
   { path: 'manager', component: BoardManagerComponent },
-  { path: 'hr', component: BoardHrComponent },
-  {path:'list',component:ListEmployeesComponent},
+  { path: 'hr', component: BoardHrComponent ,
+children:[ {path:'list',component:ListEmployeesComponent}]},
   {path:'apply',component:LeaveComponent},
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  //{path: '**', component: PageNotfoundComponent},
+
+ 
 ];
 
 @NgModule({

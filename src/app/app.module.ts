@@ -12,9 +12,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { BoardManagerComponent } from './board-manager/board-manager.component';
-import { BoardHrComponent } from './board-hr/board-hr.component';
 import { ListEmployeesComponent } from './list-employees/list-employees.component';
 import { EmployeeService } from './employee.service';
+import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { BoardHrComponent } from './board-hr/board-hr.component';
 
 
 @NgModule({
@@ -25,15 +28,20 @@ import { EmployeeService } from './employee.service';
     HomeComponent,
     ProfileComponent,
     BoardManagerComponent,
-    BoardHrComponent,
     BoardUserComponent,
     ListEmployeesComponent,
+    PageNotfoundComponent,
+    BoardHrComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule
+   
+  
   ],
   providers: [authInterceptorProviders,EmployeeService],
   bootstrap: [AppComponent]

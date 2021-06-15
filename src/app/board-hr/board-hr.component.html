@@ -1,4 +1,23 @@
 
+    
+    <mat-sidenav-container>
+        <mat-sidenav class="mat-elevation-z8    ">
+            <ul class="list">
+            <li><a mat-list-item routerLink="/hr/list"> Home</a></li>
+            <hr>
+            <li><a mat-list-item routerLink="/hr/apply"> Employees</a></li>
+            <hr>
+            <li><a mat-list-item routerLink=""> Home</a></li>
+           </ul>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="content mat-elevation-z8">
+               <router-outlet></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+<!--
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2 col-sm-4 sidebar1">
@@ -10,7 +29,7 @@
                     <hr>
                     <li >Home</li>
                     <hr>
-                    <li routerLink="/list" href="list">Employees</li>
+                    <li>Employees</li>
                     <hr>
                     <li>Absences</li>
                     <hr>
@@ -27,8 +46,6 @@
 
             </div>
         </div>
-        <div class="col-md-10 col-sm-8 main-content">
-       
-    </div>
 </div>
 
+-->
