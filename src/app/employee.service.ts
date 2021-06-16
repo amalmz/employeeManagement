@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Employee } from '../app/modules/employee';
 import { environment } from 'src/environments/environment';
+import { BehaviorSubject } from 'rxjs';
 
 
 
@@ -11,6 +12,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class EmployeeService {
+  private messageSource = new BehaviorSubject("default message");
+  currentMessage = this.messageSource.asObservable();
   private apiServerUrl = environment.apiBaseUrl;
 
 
@@ -29,5 +32,8 @@ export class EmployeeService {
 
   public deleteEmployee(employeeId: number): Observable<void> {
     return this.http.delete<void>(`${this.apiServerUrl}/employee/delete/${employeeId}`);
+  }
+  public getEmployee(employeeId: number):Observable<Employee>{
+    return this.http.get<Employee>(`${this.apiServerUrl}/employee/find/${employeeId}`);
   }
 }

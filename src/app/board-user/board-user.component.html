@@ -1,35 +1,19 @@
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-2 col-sm-4 sidebar1">
-        
-            <br>
-            <div class="left-navigation">
-                <ul class="list">
-                    <h5><strong>WHEREABOUTS</strong></h5>
-                    <li routerLink="/login">Home</li>
-                    <li >Employees</li>
-                    <li> Leaves </li>
-                    <li>Gym</li>
-                    <li>Art Class</li>
-                    <li>Hike Club</li>
-                </ul>
-
-                <br>
-
-                <ul class="list">
-                    <h5><strong>HOBBIES</strong></h5>
-                    <li>Hiking</li>
-                    <li>Rafting</li>
-                    <li>Badminton</li>
-                    <li>Tennis</li>
-                    <li>Sketching</li>
-                    <li>Horse Riding</li>
-                </ul>
+    <mat-sidenav-container>
+        <mat-sidenav class="mat-elevation-z8    ">
+            <ul class="list">
+            <li><a mat-list-item routerLink="/hr/list"> Home</a></li>
+            <hr>
+            <li><a mat-list-item routerLink="/hr/apply"> Employees</a></li>
+            <hr>
+            <li><a mat-list-item >Apply Leave </a></li>
+           <hr>
+           <li><a mat-list-item>Absance</a></li>
+          </ul>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="content mat-elevation-z8">
+               <router-outlet></router-outlet>
             </div>
-        </div>
-        <div class="col-md-10 col-sm-8 main-content">
-        <!--Main content code to be written here --> 
-       
-    </div>
-</div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>

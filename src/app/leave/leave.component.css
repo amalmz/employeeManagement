@@ -1,224 +1,30 @@
-.page-content {
-    max-width: 1140px;
-}
-.single-col-form {
-    max-width: 800px;
-}
-
-.pmd-card {
-    display: block;
-    padding: 1px 0;
-    margin-bottom: 30px;
-    background-color: #fff;
-    border: none;
-    border-radius: .25rem;
-    -moz-box-shadow: 0 6px 18px 0 rgba(0,0,0,.06);
-    -webkit-box-shadow: 0 6px 18px 0 rgb(0 0 0 / 6%);
-    box-shadow: 0 6px 18px 0 rgb(0 0 0 / 6%);
-}
-.card {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-}
-form {
-    display: block;
-    margin-top: 0em;
-}
-.pmd-card .card-body {
-    padding: 0 1.25rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-}
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.col-12 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.pmd-textfield-floating-label {
-    position: relative;
-}
-.form-group {
-    margin-bottom: 1rem;
-}
-.pmd-textfield-floating-label label {
-    -ms-transform: translateY(26px);
-    -webkit-transform: translateY(26px);
-    transform: translateY(26px);
-    font-size: 1rem;
-    transition-duration: .2s;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-}
-.pmd-textfield label {
-    font-weight: 400;
-    line-height: 1;
-    font-size: .875rem;
-    color: rgba(23,31,35,.64);
-    margin-bottom: 0;
-}
-.pmd-textfield select.form-control:not([size]):not([multiple]) {
-    height: calc(2.25rem + 1px);
-}
-select.form-control:not([size]):not([multiple]) {
-    height: calc(2.25rem + 2px);
-}
-.pmd-textfield-floating-label .form-control {
-    position: relative;
-}
-.pmd-textfield .custom-select, .pmd-textfield .form-control {
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 1px rgba(23,31,35,.12);
-    outline: 0;
-    box-shadow: none;
-    padding: 0;
-    border-radius: 0;
-    font-size: 1rem;
-    padding: .25rem 0 .5rem;
-    color: rgba(23,31,35,.87);
-}
-.form-control {
-    display: block;
+input[type=text], select {
     width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-button, input, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-option {
-    font-weight: normal;
-    display: block;
-    white-space: nowrap;
-    min-height: 1.2em;
-    padding: 0px 2px 1px;
-}
-*, ::after, ::before {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
-}
-.pmd-textfield-focused {
-    transition: transform .2s cubic-bezier(.4,0,.2,1) 0s;
-    width: 100%;
-    height: 2px;
-    display: block;
-    top: -1px;
-    background-color: #3075BA;
-    -ms-transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    position: relative;
-    z-index: 2;
-}
-.pmd-textfield-floating-label.pmd-textfield-floating-label-completed label {
-    -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    font-size: .875rem;
-    color: rgba(23,31,35,.64);
-}
-.pmd-textfield-floating-label label {
-    -ms-transform: translateY(26px);
-    -webkit-transform: translateY(26px);
-    transform: translateY(26px);
-    font-size: 1rem;
-    transition-duration: .2s;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-}
-
-.pmd-textfield-floating-label .form-control {
-    position: relative;
-}
-.pmd-textfield .custom-select, .pmd-textfield .form-control {
-    background-color: transparent;
+  }
+  
+  input[type=submit] {
+    background-color: #3f2da7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
     border: none;
-    border-bottom: solid 1px rgba(23,31,35,.12);
-    outline: 0;
-    box-shadow: none;
-    padding: 0;
-    border-radius: 0;
-    font-size: 1rem;
-    padding: .25rem 0 .5rem;
-    color: rgba(23,31,35,.87);
-}
-
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-button, input {
-    overflow: visible;
-}
-button, input, optgroup, select, textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-.pmd-textfield-focused {
-    transition: transform .2s cubic-bezier(.4,0,.2,1) 0s;
-    width: 100%;
-    height: 2px;
-    display: block;
-    top: -1px;
-    background-color: #3075BA;
-    -ms-transform: scaleX(0);
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    position: relative;
-    z-index: 2;
-}
-.pmd-card .card-footer {
-    background-color: transparent;
-    border-color: transparent;
-    padding: 0 1.25rem 1.25rem 1.25rem;
-    margin-top: 1.25rem;
-}
-.card-footer:last-child {
-    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
-}
-.card-footer {
-    padding: .75rem 1.25rem;
-    background-color: rgba(0,0,0,.03);
-    border-top: 1px solid rgba(0,0,0,.125);
-}
-.pmd-card .card-footer .btn:first-child {
-    margin-left: 0;
-}
-.pmd-card .card-footer .btn {
-    padding: .625rem .75rem;
-}
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 340px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #3e989e;
+  }
+  
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }

@@ -1,6 +1,8 @@
 
-.sidebar1 {
-    /* For browsers that do not support gradients */
+mat-sidenav {
+    margin: 16px;
+    width: 200px;
+    border-right: none;
     background: -webkit-linear-gradient(#4e657c, #54718f, #5b849b);
     /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#4e657c, #54718f, #5b849b);
@@ -8,26 +10,25 @@
     background: -moz-linear-gradien(#4e657c, #54718f, #5b849b);
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(#4e657c, #54718f, #5b849b);
-    /* Standard syntax */
-    padding: 0px;
-    min-height: 100%;
+    color: white;
     border-radius: 10px;
-    margin-top: 10px ;
-    margin-left:10px ;
+    padding: 16px;
+    margin-left: 200px;
+    text-align: center;
+    visibility: visible!important;
 }
-.logo {
-    max-height: 130px;
-}
-.logo>img {
-    margin-top: 30px;
-    padding: 3px;
-    border: 3px solid white;
-    border-radius: 100%;
+.list a {
+    color: #fff;
+   font-size: medium;
+   font-style:initial;
+ 
+
 }
 .list {
     color: #fff;
     list-style: none;
     padding-left: 0px;
+
 }
 .list::first-line {
     color: rgba(255, 255, 255, 0.5);
@@ -43,4 +44,20 @@
     padding-left: 35px;
 }.main-content{
 text-align:center;
+}
+
+.content {
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 210px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+    display: flex;
 }

@@ -18,6 +18,8 @@ import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { BoardHrComponent } from './board-hr/board-hr.component';
+import { AttendanceComponent } from './attendance/attendance.component';
+import { LeaveapproveComponent } from './leaveapprove/leaveapprove.component';
 
 
 @NgModule({
@@ -31,7 +33,10 @@ import { BoardHrComponent } from './board-hr/board-hr.component';
     BoardUserComponent,
     ListEmployeesComponent,
     PageNotfoundComponent,
-    BoardHrComponent
+    BoardHrComponent,
+    AttendanceComponent,
+    LeaveapproveComponent,
+
   ],
   imports: [
     BrowserModule,

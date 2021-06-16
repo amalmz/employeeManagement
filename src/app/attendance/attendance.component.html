@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<br><br><br>
+<h3 style="color: darkblue;    font-size: 30px;
+font-family: cursive;margin-left: 400px;">ATTENDANCE</h3>
+<br><br>
+<div style="margin-left: 400px;
+width: 800px;
+margin-right: 300px; margin-bottom: 20px;">
+    
+    <label for="lname">Month</label>
+   
+    <select id="lname" [(ngModel)]="month" name="month">
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+    <br><br>
+    <label for="lname">Year</label>
+    <!--<input [(ngModel)]="year" style="margin-left:30px;height: 50px;width: 200px;" id="lname" type="text" name="year">
+    --><select id="lname" [(ngModel)]="year" name="year">
+        <option selected value="1">2020</option>
+        <option value="2">2021</option>
+        <option value="3">2022</option>
+      </select>
+    <br><br>
+
+    
+    <input (click)=submit() type="submit" value="Submit">
+  
+</div>
+<span *ngIf="showActions">
+<br><br><br><br>
+  <table style="margin-left: 330px;  width: 63%; " id="customers">
+            <thead>
+            <th>Date</th>
+            <th>Present/Leave</th>
+            <th>Check In</th>
+            <th>Check Out</th>
+            </thead>
+            <tbody>
+            <tr *ngFor="let a of at monthpipe:month">
+            <td>{{a.date}}</td>
+
+            <td *ngIf="(a.available==1)">Present</td>
+            <td *ngIf="(a.available==1)">{{a.checkin}}</td>
+            <td *ngIf="(a.available==1)">{{a.checkout}}</td>
+            <td *ngIf="(a.available==0)">Leave</td>
+            <td *ngIf="(a.available==0)">-</td>
+            <td *ngIf="(a.available==0)">-</td>
+            </tr>
+            </tbody>
+            </table>
+            <br><br><br><br>
+            <br><br><br><br>
+            <br><br><br><br>
+        </span>
+</body>
+</html>
+

@@ -1,5 +1,67 @@
-<div class="page-content" style="margin-top: 100px; margin-left: 240px;">
-        <!-- Apply Leave Form -->
+
+
+ <!DOCTYPE html>
+ <html>
+ <style>
+ 
+ </style>
+ <body><br>
+ <h3 style="color: darkblue;    font-size: 30px;
+ font-family: cursive;margin-left: 400px;">LEAVE REQUEST</h3>
+ <br>
+ <div style="margin-left: 400px;
+ width: 800px;
+ margin-right: 300px;">
+   <label for="lname">Leave Type</label>
+    
+   <select id="lname" (ngModel)="type" name="type" required>
+       <option selected="selected" value="CL">CL</option>
+       <option value="EL">EL</option>
+       <option value="RH">RH</option>
+       <option value="HPL">HPL</option>
+       <option value="ML">ML</option>
+       <option value="OTHERS">OTHERS</option>
+     </select>
+  
+     <br><br>
+ 
+     <label for="lname">Leave Reason :</label>
+     <input type="text" id="lname" (ngModel)="reason" name="reason" placeholder="Leave Reason.." required>
+     <br><br><br>
+     <label for="lname">From Date :</label>
+     <input (ngModel)="fromdate" style="margin-left:30px;height: 50px;width: 200px;" id="lname" type="date" name="fromdate" min="2019-06-04" required>
+     <label style="margin-left:90px;" for="lname">To Date :</label>
+     <input (ngModel)="todate" style="margin-left:30px;height: 50px;width: 200px;" id="lname" type="date" name="todate" min="2019-06-04" required>
+     <br><br><br>
+ 
+     
+     <input (click)=submit() type="submit" value="Submit">
+   
+ </div>
+ 
+ </body>
+ </html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!--<div class="page-content" style="margin-top: 100px; margin-left: 240px;">
+        Apply Leave Form 
         <div class="card pmd-card single-col-form">
             <form id="apply-leave" method="post" action="" novalidate="novalidate">
                 <div class="card-body">
@@ -50,4 +112,4 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div>-->

@@ -1,1 +1,21 @@
-<p>board-manager works!</p>
+ 
+    <mat-sidenav-container>
+        <mat-sidenav class="mat-elevation-z8    ">
+            <ul class="list">
+            <li><a mat-list-item routerLink="/hr/list"> Home</a></li>
+            <hr>
+            <li><a mat-list-item routerLink="/hr/list">Employees</a></li>
+            <hr>
+            <li><a mat-list-item routerLink="/manager/leaverequests">Leaves</a></li>
+           <hr>
+           <li><a mat-list-item>Tasks</a></li>
+           <hr>
+           <li><a mat-list-item>Meetings</a></li>
+          </ul>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="content mat-elevation-z8">
+               <router-outlet></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>

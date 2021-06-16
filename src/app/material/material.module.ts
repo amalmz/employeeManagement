@@ -5,6 +5,7 @@ import{MatIconModule} from '@angular/material/icon';
 import{MatDividerModule} from '@angular/material/divider';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
+import {MatDialogModule} from '@angular/material/dialog';
 
 const MaterialComponents=[
   MatSidenavModule,
@@ -12,7 +13,9 @@ const MaterialComponents=[
   MatIconModule,
   MatDividerModule,
   MatToolbarModule,
-  MatListModule
+  MatListModule,
+  MatDialogModule
+  
 ];
 
 @NgModule({
